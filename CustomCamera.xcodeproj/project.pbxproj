@@ -8,22 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		64EA2F132B9D45A900CE8C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F122B9D45A900CE8C7C /* AppDelegate.swift */; };
-		64EA2F152B9D45A900CE8C7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F142B9D45A900CE8C7C /* SceneDelegate.swift */; };
 		64EA2F1C2B9D45AC00CE8C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1B2B9D45AC00CE8C7C /* Assets.xcassets */; };
 		64EA2F1F2B9D45AC00CE8C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1D2B9D45AC00CE8C7C /* LaunchScreen.storyboard */; };
 		64EA2F272B9D47D600CE8C7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */; };
 		64EA2F2B2B9D4A3500CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */; };
+		64EA2F692B9D64AE00CE8C7C /* CustomCameraSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EA2F672B9D642100CE8C7C /* CustomCameraSDK.framework */; };
+		64EA2F6A2B9D64AE00CE8C7C /* CustomCameraSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64EA2F672B9D642100CE8C7C /* CustomCameraSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64EA2F662B9D634700CE8C7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64EA2F6A2B9D64AE00CE8C7C /* CustomCameraSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		64EA2F0F2B9D45A900CE8C7C /* CustomCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EA2F122B9D45A900CE8C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64EA2F142B9D45A900CE8C7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		64EA2F1B2B9D45AC00CE8C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64EA2F1E2B9D45AC00CE8C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EA2F202B9D45AC00CE8C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVIew+Extension.swift"; path = "../../CustomCameraSDK/CustomCameraSDK/Utilites/Extensions/UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		64EA2F672B9D642100CE8C7C /* CustomCameraSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomCameraSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EA2F692B9D64AE00CE8C7C /* CustomCameraSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 		64EA2F062B9D45A900CE8C7C = {
 			isa = PBXGroup;
 			children = (
+				64EA2F672B9D642100CE8C7C /* CustomCameraSDK.framework */,
 				64EA2F112B9D45A900CE8C7C /* CustomCamera */,
 				64EA2F102B9D45A900CE8C7C /* Products */,
 			);
@@ -57,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				64EA2F122B9D45A900CE8C7C /* AppDelegate.swift */,
-				64EA2F142B9D45A900CE8C7C /* SceneDelegate.swift */,
 				64EA2F1B2B9D45AC00CE8C7C /* Assets.xcassets */,
 				64EA2F1D2B9D45AC00CE8C7C /* LaunchScreen.storyboard */,
 				64EA2F202B9D45AC00CE8C7C /* Info.plist */,
@@ -77,6 +93,7 @@
 				64EA2F0B2B9D45A900CE8C7C /* Sources */,
 				64EA2F0C2B9D45A900CE8C7C /* Frameworks */,
 				64EA2F0D2B9D45A900CE8C7C /* Resources */,
+				64EA2F662B9D634700CE8C7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EA2F132B9D45A900CE8C7C /* AppDelegate.swift in Sources */,
-				64EA2F152B9D45A900CE8C7C /* SceneDelegate.swift in Sources */,
 				64EA2F2B2B9D4A3500CE8C7C /* UIVIew+Extension.swift in Sources */,
 				64EA2F272B9D47D600CE8C7C /* HomeViewController.swift in Sources */,
 			);
@@ -285,8 +301,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLYDD4QU85;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Accessing your camera to take photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accessing your camera to take photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -313,8 +336,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLYDD4QU85;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Accessing your camera to take photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accessing your camera to take photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;

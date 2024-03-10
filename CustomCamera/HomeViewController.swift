@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CustomCameraSDK
 
 class HomeViewController: UIViewController {
     
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = UIColor.darkGray
         button.layer.cornerRadius = 5
-        button.addTarget(HomeViewController.self, action: #selector(handleTakePhoto), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleTakePhoto), for: .touchUpInside)
         return button
     }()
     
@@ -67,29 +68,23 @@ private extension HomeViewController {
             leftMargin: 30,
             rightMargin: 30,
             bottomMargin: 50,
-            width: 120,
+            width: 0,
             height: 50
         )
     }
     
     @objc private func handleTakePhoto() {
-//        let controller = CustomCameraController()
-//        controller.modalPresentationStyle = .fullScreen
-//        controller.modalTransitionStyle = .crossDissolve
-//        controller.valifyResultDelegat = self
-//
-//        self.present(controller, animated: true, completion: nil)
-        
+        beginVerification(from: self, with: .present, animated: true)
     }
 }
 // MARK: - ValifyDelegate
 //
-//extension HomeViewController: ValifyResultDelegate {
-//    func didFinishCapturePhoto(to viewController: UIViewController,with result: Result<UIImage, Error>) {
-//        viewController.dismiss(animated: true)
-//        guard let image = try? result.get() else { return }
-//        self.imageView.image = image
-//    }
-//}
+extension HomeViewController: ValifyResultDelegate {
+    func didFinishCapturePhoto(to viewController: UIViewController,with result: Result<UIImage, Error>) {
+        viewController.dismiss(animated: true)
+        guard let image = try? result.get() else { return }
+        self.imageView.image = image
+    }
+}
 
 
