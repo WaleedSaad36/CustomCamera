@@ -11,7 +11,6 @@ class HomeViewController: UIViewController {
     
     private var imageView: UIImageView = {
         let image = UIImageView()
-        image.image = .shutter
         image.layer.cornerRadius = 10
         image.backgroundColor = .clear
         image.contentMode = .scaleAspectFit
@@ -25,7 +24,7 @@ class HomeViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = UIColor.darkGray
         button.layer.cornerRadius = 5
-        button.addTarget(self, action: #selector(handleTakePhoto), for: .touchUpInside)
+        button.addTarget(HomeViewController.self, action: #selector(handleTakePhoto), for: .touchUpInside)
         return button
     }()
     

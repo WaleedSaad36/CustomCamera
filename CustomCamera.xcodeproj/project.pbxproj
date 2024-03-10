@@ -12,7 +12,7 @@
 		64EA2F1C2B9D45AC00CE8C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1B2B9D45AC00CE8C7C /* Assets.xcassets */; };
 		64EA2F1F2B9D45AC00CE8C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1D2B9D45AC00CE8C7C /* LaunchScreen.storyboard */; };
 		64EA2F272B9D47D600CE8C7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */; };
-		64EA2F292B9D48D600CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F282B9D48D600CE8C7C /* UIVIew+Extension.swift */; };
+		64EA2F2B2B9D4A3500CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		64EA2F1E2B9D45AC00CE8C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EA2F202B9D45AC00CE8C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		64EA2F282B9D48D600CE8C7C /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVIew+Extension.swift"; path = "../../../../CustomCameraSDK/CustomCameraSDK/Utilites/Extensions/UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVIew+Extension.swift"; path = "../../CustomCameraSDK/CustomCameraSDK/Utilites/Extensions/UIVIew+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				64EA2F1D2B9D45AC00CE8C7C /* LaunchScreen.storyboard */,
 				64EA2F202B9D45AC00CE8C7C /* Info.plist */,
 				64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */,
-				64EA2F282B9D48D600CE8C7C /* UIVIew+Extension.swift */,
+				64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */,
 			);
 			path = CustomCamera;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			files = (
 				64EA2F132B9D45A900CE8C7C /* AppDelegate.swift in Sources */,
 				64EA2F152B9D45A900CE8C7C /* SceneDelegate.swift in Sources */,
-				64EA2F292B9D48D600CE8C7C /* UIVIew+Extension.swift in Sources */,
+				64EA2F2B2B9D4A3500CE8C7C /* UIVIew+Extension.swift in Sources */,
 				64EA2F272B9D47D600CE8C7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
