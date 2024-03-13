@@ -1,0 +1,16 @@
+PODS:
+  - CustomCameraSDK (1.0.0)
+
+DEPENDENCIES:
+  - CustomCameraSDK (from `../CustomCameraSDK`)
+
+EXTERNAL SOURCES:
+  CustomCameraSDK:
+    :path: "../CustomCameraSDK"
+
+SPEC CHECKSUMS:
+  CustomCameraSDK: 20c8be40f19613bbe20b9ed4e41f8ebc5d65b51f
+
+PODFILE CHECKSUM: aa67bfca70eb512024746a257a3bcadde8f0a17a
+
+COCOAPODS: 1.14.3
