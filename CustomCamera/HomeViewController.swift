@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     
     //MARK: - properties
     //
-//    weak var valifyResultDelegate: ValifyResultDelegate?
+    weak var valifyResultDelegate: ValifyResultDelegate?
     
     // MARK: - View LifeCycle
     //

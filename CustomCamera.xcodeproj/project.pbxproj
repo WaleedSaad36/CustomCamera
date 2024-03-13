@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64DD27102BA1C39B008747DC /* Pods_CustomCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AEFEAACC274A5E239E128B /* Pods_CustomCamera.framework */; };
+		64DD27112BA1C39B008747DC /* Pods_CustomCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62AEFEAACC274A5E239E128B /* Pods_CustomCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64EA2F132B9D45A900CE8C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F122B9D45A900CE8C7C /* AppDelegate.swift */; };
 		64EA2F1C2B9D45AC00CE8C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1B2B9D45AC00CE8C7C /* Assets.xcassets */; };
 		64EA2F1F2B9D45AC00CE8C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2F1D2B9D45AC00CE8C7C /* LaunchScreen.storyboard */; };
 		64EA2F272B9D47D600CE8C7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F262B9D47D600CE8C7C /* HomeViewController.swift */; };
 		64EA2F2B2B9D4A3500CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F2A2B9D4A3500CE8C7C /* UIVIew+Extension.swift */; };
-		735533C9B29A40E227E7C295 /* Pods_CustomCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AEFEAACC274A5E239E128B /* Pods_CustomCamera.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				64DD27112BA1C39B008747DC /* Pods_CustomCamera.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				735533C9B29A40E227E7C295 /* Pods_CustomCamera.framework in Frameworks */,
+				64DD27102BA1C39B008747DC /* Pods_CustomCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +273,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -328,6 +334,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -343,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLYDD4QU85;
@@ -379,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLYDD4QU85;
