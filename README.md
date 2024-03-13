@@ -10,7 +10,7 @@
 
 ## Installation
 
-ValifyPhotoML is available through [CocoaPods](https://cocoapods.org/pods/CustomCameraSDK). To install
+CutsomCameraSDK is available through [CocoaPods](https://cocoapods.org/pods/CustomCameraSDK). To install
 it, simply add the following line to your Podfile:
 
 ## UI
